@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+
+  font-family: "Fraunces", serif;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  min-height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(185, 41%, 84%);
+}
+
+body .splitter {
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+.container {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.container .inputSide {
+  width: 50%;
+  padding: 10px;
+}
+
+.container .inputSide h4 {
+  font-size: 10px;
+}
+
+.container .inputSide .input,
+.container .inputSide .nop .noPeople {
+  width: 93%;
+  background-color: hsl(189, 41%, 90%);
+  border: none;
+  padding: 5px;
+  text-align: right;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+.container .inputSide .input:hover,
+.container .inputSide .input:focus,
+.container .inputSide .nop .noPeople:hover,
+.container .inputSide .nop .noPeople:focus,
+.container .inputSide .selectTip .tip .tipsCustom:focus,
+.container .inputSide .selectTip .tip .tipsCustom:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.container .inputSide .selectTip p,
+.container .inputSide .nop p {
+  padding: 10px 0 5px 0;
+  font-size: 12px;
+}
+
+.container .inputSide .selectTip .tip {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .inputSide .selectTip .tip .btn,
+.container .inputSide .selectTip .tip .tipsCustom {
+  width: 30%;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  height: 40px;
+  margin: 3px;
+  background-color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 3px;
+  font-size: 24px;
+}
+
+.container .inputSide .selectTip .tip .btn:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.container .inputSide .selectTip .tip .active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.container .inputSide .selectTip .tip .tipsCustom {
+  text-align: right;
+  padding: 3px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+.container .inputSide .selectTip .tip .tipsCustom {
+  background-color: hsl(189, 41%, 90%);
+}
+
+::placeholder {
+  color: hsl(186, 14%, 43%);
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.container .calculate {
+  width: 50%;
+  background-color: hsl(183, 100%, 15%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.container .calculate .calcAmount .ta,
+.container .calculate .calcAmount .totals {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+.container .calculate .calcAmount .total,
+.container .calculate .calcAmount .total {
+  color: white;
+}
+
+.container .calculate .calcAmount .amount,
+.container .calculate .calcAmount .amount {
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.container .calculate button {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  height: 40px;
+  margin: 3px;
+  opacity: 0.3;
+  background-color: hsl(172, 67%, 45%);
+  border: none;
+  border-radius: 3px;
+  color: hsl(186, 14%, 43%);
+}
+
+.container .calculate button:hover,
+.container .calculate button:focus {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    display: block;
+    padding: 70px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .inputSide {
+    width: 100%;
+  }
+
+  .container .calculate {
+    width: 100%;
+  }
+} ;
